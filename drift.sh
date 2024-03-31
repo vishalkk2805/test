@@ -4,6 +4,10 @@
 file1="./v1.txt"
 file2="./v2.txt"
 
+# Create v2 file for compare v1 file
+cd ./ && terraform plan > v2.txt
+
+
 # Check if both files exist
 if [ ! -f "$file1" ]; then
   echo "Error: $file1 not found."
@@ -14,8 +18,6 @@ if [ ! -f "$file2" ]; then
   echo "Error: $file2 not found."
   exit 1
 fi
-
-cd ./ && terraform plan > v2.txt
 
 # Perform the comparison using the 'diff' command
 if diff "$file1" "$file2" >/dev/null; then
