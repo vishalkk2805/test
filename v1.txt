@@ -1,6 +1,7 @@
-aws_security_group.security_group: Refreshing state... [id=sg-002365dfd136bce90]
+[0m[1maws_security_group.security_group: Refreshing state... [id=sg-002365dfd136bce90][0m
 
-No changes. Your infrastructure matches the configuration.
+[0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
 
-Terraform has compared your real infrastructure against your configuration
+[0mTerraform has compared your real infrastructure against your configuration
 and found no differences, so no changes are needed.
+
