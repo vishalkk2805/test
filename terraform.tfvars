@@ -1,6 +1,6 @@
 #---------------------------------Security Group ----------------------------------#
 
-security_name                 = "Dev-Frontend-sg"
+security_name                 = "Test-sg"
 Security_description          = "Security group for Dev-Frontend-API"
 SG_vpc_id                     = "vpc-0a5873d6063e0cc06"
 
@@ -14,8 +14,7 @@ outbound_ports                = [
   ]
 
 Sg_tags                       = {
-    Name          = "Dev-Frontend-sg"
-    Enviroment    = "dev"
+    Name          = "Test-sg"
     Owner         = "Vishal"
   }   
 
