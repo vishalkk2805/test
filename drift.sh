@@ -24,5 +24,5 @@ if diff "$file1" "$file2" >/dev/null; then
   echo "No Manual Changes."
 else
   echo "Something has been changed manually so I am running  reapply in the console according to the state file."
-  cd ./ && terraform apply -auto-approve
+  cd ./ && terraform init && terraform apply -auto-approve
 fi
