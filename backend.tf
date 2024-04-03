@@ -2,11 +2,11 @@ terraform {
 
   backend "s3" {
 
-    bucket         = "terraform-bucket-83030"
+    bucket         = "terraform-bucket-8303"
 
-    key            = "Postgresql/terraform.tfstate"
+    key            = "Dirft/terraform.tfstate"
 
-    region         = "ap-northeast-1"
+    region         = "us-east-2"
 
     dynamodb_table = "terraform-dynamodb"
 
