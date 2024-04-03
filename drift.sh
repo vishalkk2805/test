@@ -5,7 +5,8 @@ file1="./v1.txt"
 file2="./v2.txt"
 
 # Create v2 file for compare v1 file
-cd ./ && terraform init && terraform plan > v2.txt
+cd ./ && terraform init
+terraform plan > v2.txt
 
 
 # Check if both files exist
